@@ -25,16 +25,34 @@ body {
 
 .menu-opcoes {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   right: 0;
+  
 }
 
 .menu-opcoes ul {
   font-size: 15px;
 }
 
+
 .menu-opcoes a {
-  color: #003366;
+  color: white;
+  background-color: #808080;
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 1px 5px 1px black;
+}
+
+.menu-opcoes a:hover {
+  color: black;
+  background-color: white;
+}
+
+.menu-opcoes a:active {
+  background-color: #867DC6;
+  content: 'APERTE!'
 }
 
 .menu-opcoes ul li {
@@ -70,9 +88,31 @@ body {
   padding: 5px 10px;
 }
 
+
+.menu-departamentos li ul{  
+  display: none;
+}
+
+.menu-departamentos li:hover ul{
+  display: block;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+}
+
+.menu-departamentos li li:before {
+  content: '\272A';
+  padding: 5px;
+  
+}
 .menu-departamentos a {
   text-decoration: none;
   color: #333333;
+}
+
+#promocao {
+  box-shadow: 1px 1px 8px 1px black;
 }
 
 .busca input [type="search"] {
@@ -83,11 +123,11 @@ body {
   margin-top: 10px;
 }
 
-
 .painel {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    box-shadow: 1px 1px 5px 1px black;
     
 }
 
@@ -175,4 +215,6 @@ footer .container {
     height: 20px;
     text-indent: -999px;
 }
+
+
 
